@@ -9,6 +9,9 @@ jobs:
         uses: actions/chechout@v4.1.4
       - name: Setup-java
         uses: actions/setup-java@v4.2.1
+        with:
+          java-version: 21
+          distribution: temurin
       - name: Build
         run: ./gradlew check
 
